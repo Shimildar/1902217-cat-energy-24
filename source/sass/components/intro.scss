@@ -1,0 +1,20 @@
+.intro  {
+  padding-top: 27px;
+  background: url(/source/img/picture/index/intro_bg.jpg) transparentize($basic_green, 0.15) no-repeat left top;
+}
+
+.intro__heading {
+  & h1, p {
+    font-family: $base-font;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1em;
+  }
+  &-title {
+    font-size: 36px;
+  }
+  &-text  {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
