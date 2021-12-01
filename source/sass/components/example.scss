@@ -1,0 +1,55 @@
+.example  {
+  margin: 0;
+  padding: 25px 20px 40px 20px;
+  background-color: #EAEAEA;
+}
+
+.example__title {
+  margin: 0px 0px 40px 0px;
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1em;
+  color: #000000;
+}
+
+.example__text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1em;
+  color: #444444;
+}
+
+.example__item-title  {
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1em;
+  color: #000000;
+}
+
+.example__item-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1em;
+  color: #444444;
+}
+
+.example__cost-text {
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+}
+
+.example__range {
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #000000;
+  text-transform: uppercase;
+}

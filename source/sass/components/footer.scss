@@ -1,0 +1,37 @@
+.footer {
+  margin: 0;
+  padding: 26px 0px 22px 0px;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0px 20px 26px 20px;
+}
+
+.footer__contacts-title {
+  margin: 0;
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: #111111;
+  text-transform: uppercase;
+}
+.footer__contacts-text {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #444444;
+}
+
+.footer__copyright-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #444444;
+}
