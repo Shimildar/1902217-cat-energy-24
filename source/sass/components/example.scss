@@ -1,32 +1,124 @@
-.example  {
+.example {
+  box-sizing: border-box;
   margin: 0;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 0px 40px 0px;
   background-color: #EAEAEA;
+
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, #ffffff 57%, #EAEAEA 57%);
+    border-top: 1px solid #E6E6E6;
+    padding: 43px 0px 0px 0px;
+    min-height: 1080px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, #ffffff 28%, #EAEAEA 28%);
+    min-height: 641px;
+  }
+}
+
+.example__wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 88%;
+  @media (min-width: $tablet-width) {
+    width: 92%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "a d"
+      "b d"
+      "c e";
+    width: 85%;
+    height: 576px;
+  }
 }
 
 .example__title {
+  box-sizing: border-box;
   margin: 0px 0px 40px 0px;
+  padding: 0;
   font-family: $base-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.1em;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0px 0px 63px 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: a;
+    margin: 0;
+  }
 }
 
 .example__text {
+  box-sizing: border-box;
+  margin: 0px 0px 20px 0px;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.1em;
+  line-height: 18px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 0px 54px 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: b;
+    margin: 0;
+  }
 }
 
-.example__item-title  {
+.example__inner {
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 161px 161px 1fr;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: c;
+    margin: 0;
+  }
+}
+
+.example__item {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.example__item--left {
+  box-sizing: border-box;
+  margin-right: 32px;
+}
+
+.example__item-title {
+  box-sizing: border-box;
   font-family: $base-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 1em;
   color: #000000;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item-text {
@@ -35,6 +127,10 @@
   font-size: 12px;
   line-height: 1em;
   color: #444444;
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__cost-text {
@@ -43,13 +139,89 @@
   font-size: 14px;
   line-height: 1.3em;
   text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    align-self: flex-end;
+    width: 175px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__picture {
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .example__range {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 210px;
   font-family: $base-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2em;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    grid-area: e;
+  }
+}
+
+.example__bg {
+  display: none;
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 592px;
+    background: url(/source/img/example/left_cat.png) top left no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: d;
+  }
+}
+
+.example__bg-right {
+  @media (min-width: $tablet-width) {
+    height: 511px;
+    background: url(/source/img/example/right_cat.png) top right no-repeat;
+  }
+}
+
+.example__before-after {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.example__range-inner {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px 0px 0px 6px;
+  width: 86px;
+  height: 14px;
+  border: 1px solid #CDCDCD;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.example__range-item {
+  box-sizing: border-box;
+  width: 36px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  background-color: $basic_green;
+  border-radius: 6px;
 }

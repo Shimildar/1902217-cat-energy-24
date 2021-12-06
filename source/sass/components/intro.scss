@@ -1,20 +1,171 @@
-.intro  {
-  padding-top: 27px;
-  background: url(/source/img/picture/index/intro_bg.jpg) transparentize($basic_green, 0.15) no-repeat left top;
+.intro {
+  position: relative;
+  margin: -30px 0px 0px 0px;
+  padding: 27px 0px 0px 0px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    padding: 0;
+    margin: 0;
+    min-height: 870px;
+    background: url(/source/img/picture/index/intro_cat-energy__tablet.jpg) no-repeat bottom;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    background: none;
+    padding: 32px 0px 0px 190px;
+    min-height: auto;
+  }
 }
 
-.intro__heading {
-  & h1, p {
-    font-family: $base-font;
-    font-weight: 400;
-    color: #ffffff;
-    line-height: 1em;
+.background__intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 302px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
-  &-title {
-    font-size: 36px;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+    min-width: 720px;
+    height: 696px;
   }
-  &-text  {
-    font-size: 14px;
-    text-transform: uppercase;
+}
+
+.background__intro-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 302px;
+  z-index: 1;
+  background: url(/source/img/picture/index/intro_bg.jpg) top left no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  @media (min-width: $desktop-width) {
+    height: 696px;
+    background: url(/source/img/picture/index/intro__background-desktop.jpg) top left no-repeat;
+  }
+}
+
+.background__intro-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 302px;
+  z-index: 2;
+  background-color: $basic_green;
+  opacity: 0.85;
+
+  @media (min-width: $desktop-width) {
+    height: 696px;
+  }
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 88%;
+  margin: 0 auto;
+  padding: 27px 0px 0px 0px;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 62px 0px 0px 0px;
+    width: 69%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 5;
+    min-height: 552px;;
+    width: 64%;
+    background: url(/source/img/picture/index/intro_cat-energy--desktop.png) no-repeat top right;
+    margin: 0;
+    padding: 82px 0px 0px 0px;
+    min-width: 920px;
+  }
+}
+
+// .intro__heading {
+//   text-align: center;
+// }
+
+.intro__heading-title {
+  padding: 0;
+  margin: 0px 0px 25px 0px;
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 1em;
+
+  @media (min-width: $tablet-width) {
+    margin: 0px 0px 41px 0px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+  }
+}
+
+.intro__heading-text {
+  padding: 0;
+  margin: 0px 0px 29px 0px;
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1em;
+  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    margin: 0px 0px 49px 0px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+  }
+
+}
+
+.intro__picture {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.intro__button {
+  background-color: $basic_green;
+  font-family: $base-font;
+  padding: 11px 0px 11px 0px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 0px 17px 0px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 254px;
   }
 }

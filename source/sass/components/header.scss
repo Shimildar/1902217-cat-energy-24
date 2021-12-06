@@ -1,17 +1,144 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 0px 0px 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 0px 0px 0px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85%;
+  }
+}
+
 .header__logo {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: 6%;
+  width: 60%;
+  max-width: 174px;
+  height: 65px;
+  background: url(/source/img/icon/logo/logo-mobile.svg) left no-repeat;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    width: 23%;
+    margin: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    max-width: 202px;
+  }
+}
+
+.nav {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  border-top: 1px solid #E6E6E6;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 57%;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33,33%;
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.nav__toggle {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .nav__list-item {
-  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  border-bottom: 1px solid #E6E6E6;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    height: auto;
+    padding: 0px 0px 10px 0px;
+    &--current {
+      border-bottom: 2px solid $basic_green;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    &--current {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
 }
 
 .nav__list-item a {
   text-decoration: none;
+  text-transform: uppercase;
   font-family: $base-font;
   font-weight: 500;
   color: #000000;
   font-size: 20px;
-  line-height: 1em;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
   }
 
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
