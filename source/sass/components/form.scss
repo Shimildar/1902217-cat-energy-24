@@ -2,8 +2,8 @@
   margin: 27px 0px 32px 0px;
 }
 
-.form__heading  {
-  margin: 0 px 0px 37px 0px;
+.form__heading {
+  margin: 0px 0px 37px 0px;
   font-family: $base-font;
   font-weight: 400;
   font-size: 36px;
@@ -11,7 +11,7 @@
   line-height: 1em;
 }
 
-.form__preview  {
+.form__preview {
   margin: 0px 0px 39px 0px;
   font-family: $base-font;
   font-weight: 400;
@@ -34,16 +34,16 @@
   text-transform: uppercase;
 }
 
-.form__cat-name, .form__cat-weight, .form__cat-age  {
+.form__cat-name, .form__cat-weight, .form__cat-age {
   margin: 0px 0px 14px 12px;
   box-sizing: border-box;
   border: 1px solid #E7E7E7;
   &::placeholder {
-  font-family: $base-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2em;
-  text-transform: uppercase;
+    font-family: $base-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-transform: uppercase;
   }
 }
 
@@ -57,12 +57,12 @@
   height: 45px;
 }
 
-.form__cat-age  {
+.form__cat-age {
   width: 172px;
   height: 45px;
 }
 
-.form__check-program  {
+.form__check-program {
   font-family: $base-font;
   font-weight: 400;
   font-size: 16px;
@@ -82,7 +82,7 @@
   font-size: 24px;
   line-height: 1.1em;
   color: #000000;
-  & legend  {
+  & legend {
     margin-top: 26px;
     margin-bottom: 35px;
   }
@@ -99,12 +99,12 @@
   margin-bottom: 14px;
 }
 
-.form__email  {
+.form__email {
   width: 220px;
   height: 45px;
 }
 
-.form__phone  {
+.form__phone {
   width: 204px;
   height: 45px;
 }
@@ -116,7 +116,7 @@
   font-family: $base-font;
   font-weight: 400;
   line-height: 1.1em;
-  & legend  {
+  & legend {
     margin-bottom: 38px;
     font-size: 24px;
     color: #000000;
@@ -146,16 +146,11 @@
   font-weight: 400;
   color: #000000;
   line-height: 1.1em;
-  & legend  {
+  & legend {
     margin-top: 23px;
     font-size: 24px;
   }
 }
 .form__checkbox-sugar, .form__checkbox-water, .form__checkbox-milk, .form__checkbox-vitamin {
   text-transform: uppercase;
-}
-
-.form__button {
-}
-.button {
 }
