@@ -1,47 +1,48 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
-</head>
-<body class="page-body">
-  <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="/source/img/icon/logo/logo-mobile.svg" alt="Кэт энерджи">
-      <img class="header__logo-text" src="/source/img/icon/logo/logo_text.svg">
-    </a>
-    <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="nav__wrapper">
-        <ul class="nav__list">
-          <li class="nav__list-item nav__list-item--current">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="/source/img/icon/logo/logo_text.svg" width="101" height="18" alt="Надпись Кэт Энерджи">
+          </a>
+        </div>
+        <nav class="nav nav--closed nav--nojs">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="nav__list nav__list--catalog">
+            <li class="nav__list-item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="nav__list-item nav__list-item--current nav__list-item--current-catalog">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </nav>
-  </header>
-  <main class="main">
+    </header>
+    <main class="main">
     <section class="form">
+        <h1 class="form__heading">Подбор программы</h1>
+        <p class="form__preview">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
         <form class="form__wrapper" action="#" method="post">
-          <h1 class="form__heading">Подбор программы</h1>
-          <p class="form__preview">Заполните анкету, и мы подберем
-            программу питания для вашего кота</p>
           <fieldset class="form__cat-data form__cat-data--position">
             <label for="cat-name">ИМЯ:*</label>
             <input class="form__cat-name" id="cat-name" type="name" name="cat-name" placeholder="Барсик" required>
@@ -85,36 +86,38 @@
             <input class="form__checkbox-vitamin" id="vitamin" name="vitamin" type="checkbox">
             <label for="vitamin">ВИТАМИНЫ</label>
           </fieldset>
-          <input class="form__button button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
-          <p class="form__sub-text">* — Обязательные поля</p>
+          <fieldset class="form__button-inner">
+            <input class="form__button button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+            <p class="form__sub-text">* — Обязательные поля</p>
+          </fieldset>
         </form>
     </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="footer__contacts footer__contacts--position">
+    </main>
+    <footer class="footer">
+    <h2 class="visually-hidden">Наши контакты</h2>
+    <div class="footer__contacts-map">
+      <div class="footer__contacts">
         <h3 class="footer__contacts-title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="footer__contacts-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="footer__contacts-text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
       <div class="footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637939411280!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      <div class="footer__inner">
-          <a class="footer__logo" href="index.html">
-            <img class="footer__logo-text" src="/source/img/icon/logo/logo_text.svg">
-          </a>
-        <div class="footer__social">
-          <img class="vk_icon" src="/source/img/icon/social/VK_icon.svg" alt="Иконка VK">
-          <img class="instagram_icon" src="/source/img/icon/social/Instagram_icon.svg" alt="Иконка Instagram">
-          <img class="facebook_icon" src="/source/img/icon/social/Facebook_icon.svg" alt="Иконка Facebook">
-        </div>
-        <div class="footer__copyright">
-          <span class="footer__copyright-text">HTML Academy</span>
-          <img class="footer__copyright-icon" src="/source/img/icon/html_academy.svg" alt="Иконка академии">
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637939411280!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
-  </footer>
-</body>
+    <div class="footer__wrapper">
+        <a class="footer__logo" href="index.html">
+          <img class="footer__logo-text" src="/source/img/icon/logo/logo_text.svg" width="128" height="24" alt="Текст логотипа">
+        </a>
+      <div class="footer__social">
+        <img class="vk_icon" src="/source/img/icon/social/VK_icon.svg" width="23" height="16" alt="Иконка VK">
+        <img class="instagram_icon" src="/source/img/icon/social/Instagram_icon.svg" width="16" height="16" alt="Иконка Instagram">
+        <img class="facebook_icon" src="/source/img/icon/social/Facebook_icon.svg" width="10" height="18" alt="Иконка Facebook">
+      </div>
+      <div class="footer__copyright">
+        <span class="footer__copyright-text">HTML Academy</span>
+        <img class="footer__copyright-icon" src="/source/img/icon/html_academy.svg" width="27" height="34" alt="Иконка академии">
+      </div>
+    </div>
+    </footer>
+  </body>
 </html>
