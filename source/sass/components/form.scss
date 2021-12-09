@@ -2,6 +2,17 @@
   margin: 27px 0px 32px 0px;
 }
 
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 53% 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+}
+
 .form__heading {
   margin: 0px 0px 37px 0px;
   font-family: $base-font;
@@ -48,18 +59,18 @@
 }
 
 .form__cat-name {
-  width: 229px;
-  height: 45px;
+  width: 72%;
+  min-height: 45px;
 }
 
 .form__cat-weight {
-  width: 204px;
-  height: 45px;
+  width: 64%;
+  min-height: 45px;
 }
 
 .form__cat-age {
-  width: 172px;
-  height: 45px;
+  width: 54%;
+  min-height: 45px;
 }
 
 .form__check-program {
@@ -90,6 +101,11 @@
     font-size: 16px;
     color: #444444;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: span 2;
+    grid-row: 2 / 3;
   }
 }
 
@@ -137,6 +153,11 @@
     text-transform: uppercase;
     color: #444444;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: span 2;
+    grid-row: 3 / 4;
+  }
 }
 
 .form__checkbox {
@@ -150,7 +171,29 @@
     margin-top: 23px;
     font-size: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: span 2;
+    grid-row: 4 / 5;
+  }
 }
 .form__checkbox-sugar, .form__checkbox-water, .form__checkbox-milk, .form__checkbox-vitamin {
   text-transform: uppercase;
+}
+
+.form__button-inner {
+
+  @media (min-width: $desktop-width) {
+    grid-column: span 2;
+    grid-row: 5 / -1;
+  }
+}
+
+.form__button {
+  background-color: $basic_green;
+  font-family: $base-font;
+  padding: 11px 0px 11px 0px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }

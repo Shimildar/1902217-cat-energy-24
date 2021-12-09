@@ -1,7 +1,7 @@
 .example {
   box-sizing: border-box;
   margin: 0;
-  padding: 25px 0px 40px 0px;
+  padding: 30px 0px 50px 0px;
   background-color: #EAEAEA;
 
 
@@ -15,23 +15,26 @@
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to bottom, #ffffff 28%, #EAEAEA 28%);
     min-height: 641px;
+    padding: 0;
+    border: none;
   }
 }
 
 .example__wrapper {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
   box-sizing: border-box;
   margin: 0 auto;
   width: 88%;
   @media (min-width: $tablet-width) {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto auto;
     width: 92%;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-areas:
-      "a d"
-      "b d"
-      "c e";
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto auto;
     width: 85%;
     height: 576px;
   }
@@ -39,8 +42,26 @@
 
 .example__title {
   box-sizing: border-box;
-  margin: 0px 0px 40px 0px;
+  margin: 0;
   padding: 0;
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 0;
+    height: 364px;
+  }
+}
+
+.example__heading {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px 0px 40px 0px;
   font-family: $base-font;
   font-weight: 400;
   font-size: 36px;
@@ -48,21 +69,20 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
-    margin: 0px 0px 63px 0px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: a;
-    margin: 0;
+    padding-bottom: 146px;
   }
 }
 
 .example__text {
   box-sizing: border-box;
-  margin: 0px 0px 20px 0px;
-  padding: 0;
+  margin: 0;
+  padding: 0px 0px 20px 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -70,51 +90,62 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
-    margin: 0px 0px 54px 0px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: b;
-    margin: 0;
+    width: 431px;
   }
 }
 
 .example__inner {
-  box-sizing: border-box;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 161px 161px 1fr;
-    align-items: center;
-    margin-bottom: 80px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 365px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: c;
-    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 100px;
   }
 }
 
 .example__item {
+  position: relative;
+  z-index: 1;
+  padding-top: 15px;
+  min-width: 124px;
+  width: auto;
+  height: 56px;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
   box-sizing: border-box;
-  display: inline-block;
-}
 
-.example__item--left {
-  box-sizing: border-box;
-  margin-right: 32px;
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    height: 75px;
+  }
 }
 
 .example__item-title {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: $base-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 1em;
   color: #000000;
+  text-align: center;
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
@@ -122,43 +153,130 @@
 }
 
 .example__item-text {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 2;
+  padding: 0;
+  margin-left: -44px;
+  width: 88px;
+  height: 22px;
+  background-color: #EAEAEA;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1em;
   color: #444444;
   @media (min-width: $tablet-width) {
+    width: 142px;
+    height: 27px;
+    bottom: -20px;
+    margin-left: -71px;
+    background-color: #ffffff;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #EAEAEA;
+  }
+}
+
+
+.example__cost {
+  padding: 38px 0px 40px 0px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: end;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / -1;
+    justify-self: left;
   }
 }
 
 .example__cost-text {
+  margin: 0;
+  padding: 0;
   font-family: $base-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3em;
   text-transform: uppercase;
   @media (min-width: $tablet-width) {
-    align-self: flex-end;
+    text-align: end;
     width: 175px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 328px;
   }
 }
 
 .example__picture {
   box-sizing: border-box;
   width: 280px;
+  height: 232px;
   margin: 0 auto;
+  padding: 0;
+  background: url(/source/img/example/before-mobile.png) top left no-repeat;
+
   @media (min-width: $tablet-width) {
-    display: none;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    position: relative;
+    z-index: 1;
+    margin-top: 90px;
+    width: 592px;
+    height: 511px;
+    background: url(/source/img/example/left_cat.png) top left no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / 3;
+    justify-self: end;
+    margin: 0;
+  }
+}
+
+.example__picture::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 296px;
+    height: 511px;
+    background: url(/source/img/example/right_cat.png) no-repeat;
+  }
+}
+
+.example__bg-right {
+  @media (min-width: $tablet-width) {
+    height: 511px;
+    background: url(/source/img/example/right_cat.png) top right no-repeat;
   }
 }
 
 .example__range {
   box-sizing: border-box;
   margin: 0 auto;
+  padding-top: 25px;
   width: 210px;
   font-family: $base-font;
   font-weight: 400;
@@ -168,31 +286,14 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: $desktop-width) {
-    grid-area: e;
-  }
-}
-
-.example__bg {
-  display: none;
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    width: 592px;
-    background: url(/source/img/example/left_cat.png) top left no-repeat;
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: d;
-  }
-}
-
-.example__bg-right {
-  @media (min-width: $tablet-width) {
-    height: 511px;
-    background: url(/source/img/example/right_cat.png) top right no-repeat;
+    grid-column: 2 / -1;
+    grid-row: 3 / 4;
   }
 }
 

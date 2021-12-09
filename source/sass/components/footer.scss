@@ -1,7 +1,11 @@
 .footer {
   margin: 0;
   padding: 26px 0px 22px 0px;
-  background-image: linear-gradient(to bottom, #ffffff 50%, #F2F2F2 50%);
+  background-color: #F2F2F2;
+
+  &--index {
+    background-image: linear-gradient(to bottom, #ffffff 50%, #F2F2F2 50%);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 55px 0px 58px 0px;
@@ -12,7 +16,7 @@
   }
 }
 
-.footer__ {
+.footer__contacts-map {
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -82,7 +86,7 @@
   }
 }
 
-.footer__inner {
+.footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,12 +97,14 @@
     flex-direction: row;
     justify-content: space-between;
     width: 92%;
-    height: 34px;
+    min-height: 34px;
     margin-top: 58px;
   }
 
   @media (min-width: $desktop-width) {
     width: 85%;
+    min-height: 150px;
+    margin: 0 auto;
   }
 }
 
