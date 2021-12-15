@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0px 58px 0px;
+    padding: 60px 0px 0px 0px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,18 +26,19 @@
   display: flex;
   justify-content: space-between;
   width: 88%;
-  margin: 0px auto 26px auto;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0px 0px 26px 0px;
   box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
-    width: 84%;
-    margin-bottom: 55px;
+    width: 82%;
+    padding: 0px 0px 60px 0px;
   }
 
   @media (min-width: $desktop-width) {
     position:absolute;
-    top: 95px;
-    left: 110px;
+    top: 92px;
+    left: 108px;
     z-index: 1;
     width: 565px;
     height: 198px;
@@ -49,23 +50,25 @@
 
 .footer__contacts-title {
   margin: 0;
-  width: 140px;
+  padding: 0;
+  width: 139px;
   font-family: $base-font;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.3em;
+  line-height: 20px;
   color: #111111;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-style: 20px;
+    font-size: 20px;
     line-height: 26px;
+    width: 170px;
   }
 }
 
 .footer__contacts-text {
   margin: 0;
-  width: 140px;
+  width: 139px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -73,8 +76,14 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    font-style: 16px;
+    font-size: 16px;
+    line-height: 18px;
     text-align: end;
+    width: 159px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
@@ -86,61 +95,87 @@
   }
 }
 
-.footer__wrapper {
+.footer__social-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 88%;
   margin: 0 auto;
+  padding: 39px 0px 0px 0px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     width: 92%;
-    min-height: 34px;
-    margin-top: 58px;
+    padding: 57px 0px 55px 0px;
   }
 
   @media (min-width: $desktop-width) {
     width: 85%;
-    min-height: 150px;
-    margin: 0 auto;
   }
 }
 
 .footer__logo {
   display: block;
   box-sizing: border-box;
-  margin: 0;
-  padding: 39px 0px 32px 0px;
+  margin: 0px 0px 29px 0px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.footer__logo-text {
+  @media (min-width: $tablet-width) {
+    width: 128px;
+    height: 24px;
+  }
 }
 
 .footer__social {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 20px 0px 21px 0px;
+  margin: 0;
+  padding: 23px 0px 18px 0px;
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     align-items: center;
     justify-content: space-between;
-    width: 129px;
+    width: 123px;
     border: none;
-    margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
+.social__link {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
 .vk_icon {
+  padding: 0;
+  margin: 0;
+
   @media (min-width: $tablet-width) {
-    width: 29px;
-    height: 17px;
+    width: 30px;
+    height: 23px;
   }
 }
 
 .instagram_icon {
-  padding: 0px 33px 0px 36px;
+  padding: 0;
+  margin: 0px 39px 0px 37px;
 
   @media (min-width: $tablet-width) {
     width: 23px;
@@ -151,20 +186,25 @@
 }
 
 .facebook_icon {
+  padding: 0;
+  margin: 0;
+
   @media (min-width: $tablet-width) {
-    width: 13px;
-    height: 27px;
+    width: 20px;
+    height: 30px;
   }
 }
 
 .footer__copyright {
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
+  align-items: center;
+  margin: 0;
+  padding: 22px 0px 0px 0px;
   width: 100%;
+  text-decoration: none;
+
   @media (min-width: $tablet-width) {
-    align-items: center;
-    justify-content: space-between;
     padding: 0;
     width: 163px;
   }
@@ -173,8 +213,8 @@
 .footer__copyright-text {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 18px;
   color: #444444;
 
   @media (min-width: $tablet-width) {
