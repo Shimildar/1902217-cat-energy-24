@@ -10,30 +10,30 @@
   <body class="page__body">
     <header class="header header--index">
       <div class="header__wrapper">
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="/source/img/icon/logo/logo_text.svg" width="101" height="18" alt="Надпись Кэт Энерджи">
-          </a>
-        </div>
-        <nav class="nav nav--closed nav--nojs">
+        <a class="header__logo" href="index.html">
+            <img class="header__logo-text" src="img/logo/logo_text.svg" width="101" height="18" alt="Кэт Энерджи">
+        </a>
+        <nav class="nav nav--nojs">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="nav__list">
-            <li class="nav__list-item nav__list-item--current">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="nav__list-item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="nav__list-item">
-              <a href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
+          <div class="nav__wrapper">
+            <ul class="nav__list">
+              <li class="nav__list-item nav__list-item--index nav__list-item--current-index">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="nav__list-item nav__list-item--index">
+                <a href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="nav__list-item nav__list-item--index">
+                <a href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -46,25 +46,25 @@
             <p class="intro__heading-text">Занялся собой? Займись котом!</p>
           </div>
           <div class="intro__picture">
-            <img class="intro__picture-img" src="./img/index/index-can-mobile_1.png" alt="Кэт энерджи-курица">
+            <img class="intro__picture-img" src="img/index/index-can-mobile_1.png" alt="Кэт энерджи-курица">
           </div>
           <a class="button intro__button" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="preview">
-        <div class="preview__wrapper">
-          <h2 class="visually-hidden">Выбор каталога</h2>
-          <div class="preview__inner preview__inner--sitting-cat">
+        <h2 class="visually-hidden">Выбор каталога</h2>
+        <ul class="preview__list">
+          <li class="preview__item preview__item--cat-back">
             <h3 class="preview__title">Похудение</h3>
             <p class="preview__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="preview__link" href="#">Каталог SLIM</a>
-          </div>
-          <div class="preview__inner preview__inner--walking-cat">
+          </li>
+          <li class="preview__item preview__item--cat-walk">
             <h3 class="preview__title">Набор массы</h3>
             <p class="preview__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="preview__link" href="#">Каталог PRO</a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="benefits">
         <div class="benefits__wrapper">
@@ -72,19 +72,19 @@
           <h3 class="benefits__title">Как это работает</h3>
           <ul class="benefits__list">
             <li class="benefits__item benefits__item--healthy">
-              <img class="benefits__icon" src="/source/img/benefits/icon/benefits_healthy.svg" width="60" height="60" alt="Иконка листок">
+              <img class="benefits__icon" src="img/benefits/icon/benefits_healthy.svg" width="60" height="60" alt="Иконка листок">
               <p class="benefits__text">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="benefits__item  benefits__item--powder">
-              <img class="benefits__icon" src="/source/img/benefits/icon/benefits_powder.svg" width="60" height="60" alt="Иконка порошка">
+              <img class="benefits__icon" src="img/benefits/icon/benefits_powder.svg" width="60" height="60" alt="Иконка порошка">
               <p class="benefits__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="benefits__item benefits__item--change">
-              <img class="benefits__icon" src="/source/img/benefits/icon/benefits_change.svg" width="60" height="60" alt="Иконка вилка и нож">
+              <img class="benefits__icon" src="img/benefits/icon/benefits_change.svg" width="60" height="60" alt="Иконка вилка и нож">
               <p class="benefits__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="benefits__item benefits__item--term">
-              <img class="benefits__icon" src="/source/img/benefits/icon/benefits_term.svg" width="60" height="60" alt="Иконка время">
+              <img class="benefits__icon" src="img/benefits/icon/benefits_term.svg" width="60" height="60" alt="Иконка время">
               <p class="benefits__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
             </li>
           </ul>
@@ -98,22 +98,20 @@
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
           </div>
-          <div class="example__inner">
-            <div class="example__item example__item--left">
+          <ul class="example__list">
+            <li class="example__item">
               <div class="example__item-title">5 КГ</div>
-              <div class="example__item-text">Снижение веса</div>
-            </div>
-            <div class="example__item example__item--right">
+              <div class="example__item-text example__item-text--left"><span>Снижение веса</span></div>
+            </li>
+            <li class="example__item">
               <div class="example__item-title">60 ДНЕЙ</div>
-              <div class="example__item-text">Затрачено времени</div>
-            </div>
-          </div>
+              <div class="example__item-text example__item-text--right"><span>Затрачено времени</span></div>
+            </li>
+          </ul>
           <div class="example__cost">
             <p class="example__cost-text">
               <span>Затраты на питание:</span> <span>15 000 РУБ.</span>
             </p>
-          </div>
-          <div class="example__picture">
           </div>
           <div class="example__range">
             <div class="example__before-after">
@@ -131,26 +129,32 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="footer__contacts-map">
           <div class="footer__contacts">
-            <h3 class="footer__contacts-title">Приглашаем к сотрудничеству дилеров!</h3>
+            <h3 class="footer__contacts-title">Приглашаем<br> к сотрудничеству дилеров!</h3>
             <p class="footer__contacts-text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
           </div>
           <div class="footer__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637939411280!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
-        <div class="footer__wrapper">
+        <div class="footer__social-wrapper">
             <a class="footer__logo" href="index.html">
-              <img class="footer__logo-text" src="/source/img/icon/logo/logo_text.svg" width="128" height="24" alt="Текст логотипа">
+              <img class="footer__logo-text" src="img/logo/logo_text.svg" width="128" height="24" alt="Текст логотипа">
             </a>
           <div class="footer__social">
-            <img class="vk_icon" src="/source/img/icon/social/VK_icon.svg" width="23" height="16" alt="Иконка VK">
-            <img class="instagram_icon" src="/source/img/icon/social/Instagram_icon.svg" width="16" height="16" alt="Иконка Instagram">
-            <img class="facebook_icon" src="/source/img/icon/social/Facebook_icon.svg" width="10" height="18" alt="Иконка Facebook">
+            <a class="social__link" href="#">
+              <img class="vk_icon" src="img/social/VK_icon.svg" width="22" height="12" alt="Иконка VK">
+            </a>
+            <a class="social__link" href="#">
+              <img class="instagram_icon" src="img/social/Instagram_icon.svg" width="16" height="16" alt="Иконка Instagram">
+            </a>
+            <a class="social__link" href="#">
+              <img class="facebook_icon" src="img/social/Facebook_icon.svg" width="11" height="20" alt="Иконка Facebook">
+            </a>
           </div>
-          <div class="footer__copyright">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__copyright-text">HTML Academy</span>
-            <img class="footer__copyright-icon" src="/source/img/icon/html_academy.svg" width="27" height="34" alt="Иконка академии">
-          </div>
+            <img class="footer__copyright-icon" src="img/logo/html_academy.svg" width="27" height="34" alt="Иконка академии">
+          </a>
         </div>
     </footer>
   </body>

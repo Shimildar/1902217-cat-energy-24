@@ -1,106 +1,300 @@
 .form {
-  margin: 27px 0px 32px 0px;
+  margin: 0;
+  padding: 27px 0px 32px 0px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0px 72px 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 73px 0px 82px 0px;
+  }
+}
+
+.form-title {
+  width: 88%;
+  margin: 0 auto;
+  font-family: $base-font;
+  font-weight: 400;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin: 0px 0px 0px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+.form__heading {
+  margin: 0px 0px 37px 0px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.form__preview {
+  margin: 0px 0px 39px 0px;
+  width: 81%;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 27%;
+  }
 }
 
 .form__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
+  margin: 0;
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 53% 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, auto);
+    column-gap: 80px;
   }
-}
-
-.form__heading {
-  margin: 0px 0px 37px 0px;
-  font-family: $base-font;
-  font-weight: 400;
-  font-size: 36px;
-  color: #000000;
-  line-height: 1em;
-}
-
-.form__preview {
-  margin: 0px 0px 39px 0px;
-  font-family: $base-font;
-  font-weight: 400;
-  font-size: 14px;
-  color: #000000;
-  line-height: 1.3em;
-  text-transform: uppercase;
 }
 
 .form__cat-data {
   box-sizing: border-box;
   margin: 0;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 24px 0px;
   border: none;
-  font-family: $base-font;
-  font-weight: 400;
-  font-size: 16px;
-  color: #444444;
-  line-height: 1em;
-  text-transform: uppercase;
-}
+  border-bottom: 1px solid #E7E7E7;
 
-.form__cat-name, .form__cat-weight, .form__cat-age {
-  margin: 0px 0px 14px 12px;
-  box-sizing: border-box;
-  border: 1px solid #E7E7E7;
-  &::placeholder {
+
+  & label {
+    margin: 0;
     font-family: $base-font;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.2em;
+    line-height: 18px;
+    color: #444444;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: end;
+    width: 84%;
+    padding: 0;
+  }
+}
+
+.form__list {
+  width: 88%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0px 0px 0px 70px;
+    width: 82%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.form__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 14px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__cat-name, .form__cat-weight, .form__cat-age {
+  margin: 0px 0px 0px 12px;
+  padding: 0px 0px 0px 15px;
+  min-height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #E7E7E7;
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    min-height: 52px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 .form__cat-name {
-  width: 72%;
-  min-height: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 15px;
+  }
 }
 
 .form__cat-weight {
-  width: 64%;
-  min-height: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+  }
 }
 
 .form__cat-age {
-  width: 54%;
-  min-height: 45px;
+  margin-bottom: 0px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 14px;
+  }
 }
 
 .form__check-program {
-  font-family: $base-font;
-  font-weight: 400;
-  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 22px 0px 19px 0px;
+  border: none;
+  border-bottom: 1px solid #E7E7E7;
+  line-height: 18px;
   color: #222222;
-  line-height: 1.1em;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+    padding: 25px 0px 25px 30px;
+    width: 82%;
+    border: 1px solid #E7E7E7;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 84%;
+    margin: 0;
+  }
+}
+
+.form__check-program__wrapper {
+  width: 88%;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.form__checked-program {
+  margin: 0px 15px 12px 0px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .form__contacts {
+  position: relative;
+  z-index: 1;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  padding-bottom: 10px;
+  padding: 113px 0px 24px 0px;
   border: none;
   font-family: $base-font;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 1.1em;
-  color: #000000;
-  & legend {
-    margin-top: 26px;
-    margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    right: 0;
+    z-index: -1;
+    width: 90%;
+    height: 2px;
+    background-color: $basic-green;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      top: 99px;
+      width: 100%;
+    }
   }
-  & label {
-    font-size: 16px;
-    color: #444444;
-    text-transform: uppercase;
+
+  & legend {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 63%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: none;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      top: 76px;
+      left: 30px;
+      width: 593px;
+      font-size: 36px;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 187px 0px 65px 0px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,49 +303,103 @@
   }
 }
 
+.label__email {
+  padding-right: 11px;
+}
+
+.label__phone {
+  padding-right: 8px;
+}
+
 .form__email, .form__phone {
   box-sizing: border-box;
+  min-height: 45px;
+  padding: 0px 0px 0px 15px;
   border: 1px solid #CDCDCD;
-  margin-bottom: 14px;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__email {
-  width: 220px;
-  height: 45px;
+  background: url(../../img/form/letter_icon.svg) no-repeat;
+  background-position: top 15px right 15px;
+
 }
 
 .form__phone {
-  width: 204px;
-  height: 45px;
+  background: url(../../img/form/phone_icon.svg) no-repeat;
+  background-position: top 13px right 13px;
 }
 
 .form__text-area {
+  position: relative;
+  z-index: 1;
   margin: 0;
+  padding: 64px 0px 29px 0px;
+  width: 100%;
   box-sizing: border-box;
   border: none;
-  font-family: $base-font;
-  font-weight: 400;
-  line-height: 1.1em;
-  & legend {
-    margin-bottom: 38px;
-    font-size: 24px;
-    color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    z-index: -1;
+    width: 90%;
+    height: 2px;
+    background-color: $basic-green;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      z-index: -1;
+      width: 100%;
+    }
   }
 
-  & textarea  {
+  & textarea {
+    width: 100%;
+    height: 150px;
     margin: 0;
     padding: 0;
-    width: 280px;
-    height: 150px;
-  }
-
-  & ::placeholder {
     font-family: $base-font;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.1em;
+    line-height: 18px;
     text-transform: uppercase;
     color: #444444;
+  }
+
+  & legend {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+    width: 143px;
+    font-size: 24px;
+    line-height: 26px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      left: 30px;
+      width: 259px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 113px 0px 65px 0px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,28 +408,141 @@
   }
 }
 
-.form__checkbox {
+.form__textarea-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 88%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0px 0px 0px 70px;
+    width: 82%;
+  }
+}
+
+.form__addition {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
   margin: 0;
-  padding-top: 34px;
+  padding: 55px 0px 34px 0px;
+  border: none;
   font-family: $base-font;
   font-weight: 400;
   color: #000000;
-  line-height: 1.1em;
-  & legend {
-    margin-top: 23px;
-    font-size: 24px;
+  font-size: 16px;
+  line-height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: -1;
+    width: 90%;
+    height: 2px;
+    background-color: $basic-green;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      width: 100%;
+    }
   }
+
+  & legend {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+    width: 164px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      left: 30px;
+      width: 292px;
+      font-size: 36px;
+      line-height: 36px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 88px 0px 22px 0px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
 
   @media (min-width: $desktop-width) {
     grid-column: span 2;
     grid-row: 4 / 5;
   }
 }
-.form__checkbox-sugar, .form__checkbox-water, .form__checkbox-milk, .form__checkbox-vitamin {
+
+.form__addition-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  width: 88%;
+  list-style: none;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 70px;
+    width: auto;
+  }
+}
+
+.form__addition-item {
+  padding: 0;
+  margin: 0px 0px 15px 0px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0px 0px 32px 0px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 221px;
+    margin: 0px 123px 32px 0px;
+  }
+
+}
+
+.form__addition-sugar, .form__addition-water, .form__addition-milk, .form__addition-vitamin {
+  margin: 0;
+  margin-right: 16px;
+  padding: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .form__button-inner {
+  margin: 0 auto;
+  padding: 0;
+  width: 88%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 73%;
+    margin: 0px 0px 0px 70px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: span 2;
@@ -192,8 +553,25 @@
 .form__button {
   background-color: $basic_green;
   font-family: $base-font;
+  margin: 0px 0px 21px 0px;
   padding: 11px 0px 11px 0px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 13px 0px 13px 0px;
+    font-size: 20px;
+  }
+}
+
+.form__sub-text {
+  margin: 0 auto;
+  width: 157px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }

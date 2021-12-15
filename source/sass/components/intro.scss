@@ -3,19 +3,21 @@
   z-index: 1;
   margin: 0;
   padding: 0;
-  background-image: url(/source/img/index/intro_bg.jpg), linear-gradient(to bottom, #444444 63%, #ffffff 63%);
+  background-image: url(../../img/index/intro/intro_bg.jpg), linear-gradient(to bottom, #444444 63%, #ffffff 63%);
   background-repeat: no-repeat;
   background-position: top;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    min-height: 870px;
-    background: url(/source/img/index/intro_cat-energy__tablet.jpg) no-repeat bottom;
+    padding: 62px 0px 0px 0px;
+    min-height: 872px;
+    background: url(../../img/index/intro/intro_cat-energy__tablet.jpg) no-repeat bottom;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
     background: none;
-    padding: 32px 0px 0px 190px;
+    padding: 28px 0px 0px 190px;
     min-height: auto;
   }
 }
@@ -46,9 +48,9 @@
   width: 88%;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     justify-content: start;
-    padding: 62px 0px 0px 0px;
-    width: 70%;
+    width: 69%;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +58,7 @@
     z-index: 5;
     min-height: 552px;;
     width: 64%;
-    background: url(/source/img/index/intro_cat-energy--desktop.png) no-repeat top right;
+    background: url(../../img/index/intro/intro_cat-energy--desktop.png) no-repeat top right;
     margin: 0;
     padding: 82px 0px 0px 0px;
     min-width: 920px;
@@ -73,7 +75,7 @@
   line-height: 1em;
 
   @media (min-width: $tablet-width) {
-    margin: 0px 0px 41px 0px;
+    margin: 0px 0px 40px 0px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -90,6 +92,7 @@
   color: #ffffff;
   line-height: 1em;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     margin: 0px 0px 49px 0px;
     font-size: 20px;
@@ -97,7 +100,6 @@
     color: #000000;
     text-align: left;
   }
-
 }
 
 .intro__picture {
@@ -118,6 +120,6 @@
     padding: 17px 0px 17px 0px;
     font-size: 20px;
     line-height: 20px;
-    width: 254px;
+    width: 244px;
   }
 }
