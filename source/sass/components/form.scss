@@ -300,6 +300,23 @@
   @media (min-width: $desktop-width) {
     grid-column: span 2;
     grid-row: 2 / 3;
+    padding: 181px 0px 67px 0px;
+  }
+}
+
+.form__list--contacts {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    padding: 0;
+    margin: 0 auto;
+    width: 85%;
+
+    & .form__item {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
@@ -405,6 +422,7 @@
   @media (min-width: $desktop-width) {
     grid-column: span 2;
     grid-row: 3 / 4;
+    padding: 110px 0px 67px 0px;
   }
 }
 
@@ -416,6 +434,11 @@
   @media (min-width: $tablet-width) {
     margin: 0px 0px 0px 70px;
     width: 82%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85%;
+    margin: 0 auto;
   }
 }
 
@@ -480,6 +503,7 @@
   @media (min-width: $desktop-width) {
     grid-column: span 2;
     grid-row: 4 / 5;
+    padding: 90px 0px 29px 0px;
   }
 }
 
