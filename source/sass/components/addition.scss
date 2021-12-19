@@ -166,9 +166,14 @@
   margin: 0;
   padding: 59px 0px 43px 0px;
   min-height: 290px;
-  background: url(../../img/catalog/addition_gift_bg.png) top no-repeat;
+  background: url("../img/catalog/gift/gift@1x.png") top no-repeat;
   background-position-y: 60%;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/gift/gift@2x.png");
+    background-size: 279px cover;
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

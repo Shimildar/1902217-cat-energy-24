@@ -260,13 +260,18 @@
   padding: 0;
   min-width: 280px;
   min-height: 274px;
-  background: url(../../img/index/example/before-mobile.png) top left no-repeat;
+  background: url("../img/index/example/before-mobile@1x.png") top left no-repeat;
   font-family: $base-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/example/before-mobile@2x.png");
+    background-size: 280px auto;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -288,7 +293,12 @@
       z-index: 2;
       width: 296px;
       height: 511px;
-      background: url(../../img/index/example/left_cat.png) no-repeat;
+      background: url("../img/index/example/cat-fat@1x.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/example/cat-fat@2x.png");
+        background-size: 296px auto;
+      }
     }
 
     &::after {
@@ -299,7 +309,12 @@
       z-index: 2;
       width: 296px;
       height: 511px;
-      background: url(../../img/index/example/right_cat.png) no-repeat;
+      background: url("../img/index/example/cat-skinny@1x.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/example/cat-skinny@2x.png");
+        background-size: 296px auto;
+      }
     }
   }
 
