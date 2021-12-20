@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   color: #000000;
   width: 100%;
   background-color: #ffffff;
@@ -12,7 +12,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: 4;
+    z-index: 3;
     width: 50%;
     height: 694px;
     background-color: $basic_green;
@@ -27,11 +27,16 @@
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: 3;
+    z-index: 2;
     width: 50%;
     height: 694px;
-    background: url(../../img/index/intro__background-desktop.jpg) top  right no-repeat;
+    background: url("../img/header/intro_bg-desktop@1x.jpg") top  right no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/intro_bg-desktop@2x.jpg");
+      background-size: 720px cover;
+    }
   }
 }
 
@@ -51,72 +56,34 @@
   @media (min-width: $desktop-width) {
     align-items: center;
     width: 85%;
-    padding-top: 52px;
   }
 }
 
 .header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: auto;
   height: 65px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px 0px 17px 20px;
   border-bottom: 1px solid #E6E6E6;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    justify-content: end;
+    padding: 0;
+    margin-top: 24px;
     height: 52px;
-    width: 174px;
-    margin-top: 25px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 202px;
     height: 59px;
-    margin: 0;
-  }
-}
-
-.header__logo::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  z-index: 2;
-  width: 33px;
-  height: 38px;
-  background: url(../../img/logo/logo-mobile.svg) left no-repeat;
-  background-size: cover;
-
-  @media (min-width: $tablet-width) {
-    top: 0;
-    left: 0;
-    width: 61px;
-    height: 50px;
-    background: url(../../img/logo/logo__tablet.svg) left no-repeat;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 70px;
-    height: 59px;
-    background: url(../../img/logo/logo__desktop.svg) left no-repeat;
-  }
-}
-
-.header__logo-text {
-  @media (min-width: $tablet-width) {
-    width: 102px;
-    height: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
+    margin-top: 53px;
   }
 }
 
 .nav {
+  padding: 0;
+  margin: 0;
   width: auto;
   background-color: #ffffff;
 
@@ -127,8 +94,9 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    z-index: 5;
+    z-index: 4;
     margin: 0;
+    margin-top: 69px;
     background: none;
     width: 40%;
   }

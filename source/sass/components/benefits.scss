@@ -81,14 +81,14 @@
 
 .benefits__item--healthy {
   @media (min-width: $tablet-width) {
-    background: url(../../img/benefits/bg/benefits_bg-1.png) no-repeat;
+    background: url("../img/benefits/bg/1.svg") no-repeat;
     background-position: 72% 0;
   }
 }
 
 .benefits__item--powder {
   @media (min-width: $tablet-width) {
-    background: url(../../img/benefits/bg/benefits_bg-2.png) no-repeat;
+    background: url("../img/benefits/bg/2.svg") no-repeat;
     background-position: 92% 0;
   }
 }
@@ -96,7 +96,7 @@
 .benefits__item--change {
   @media (min-width: $tablet-width) {
     margin: 0;
-    background: url(../../img/benefits/bg/benefits_bg-3.png) no-repeat;
+    background: url("../img/benefits/bg/3.svg") no-repeat;
     background-position: 95% 0;
   }
 }
@@ -104,7 +104,7 @@
 .benefits__item--term {
   @media (min-width: $tablet-width) {
     margin: 0;
-    background: url(../../img/benefits/bg/benefits_bg-4.png) top right no-repeat;
+    background: url("../img/benefits/bg/4.svg") top right no-repeat;
   }
 }
 

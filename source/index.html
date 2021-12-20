@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="header header--index">
       <div class="header__wrapper">
-        <a class="header__logo" href="index.html">
-            <img class="header__logo-text" src="img/logo/logo_text.svg" width="101" height="18" alt="Кэт Энерджи">
-        </a>
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="header__logo-image" src="img/logo/logo-mobile.svg" alt="Иконка кота">
+            </picture>
+          </a>
         <nav class="nav nav--nojs">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="nav__wrapper">
@@ -46,7 +54,7 @@
             <p class="intro__heading-text">Занялся собой? Займись котом!</p>
           </div>
           <div class="intro__picture">
-            <img class="intro__picture-img" src="img/index/index-can-mobile_1.png" alt="Кэт энерджи-курица">
+            <img class="intro__picture-img" src="img/index/intro/index-can-mobile@1x.png" alt="Кэт энерджи-курица">
           </div>
           <a class="button intro__button" href="form.html">Подобрать программу</a>
         </div>
@@ -138,23 +146,27 @@
         </div>
         <div class="footer__social-wrapper">
             <a class="footer__logo" href="index.html">
-              <img class="footer__logo-text" src="img/logo/logo_text.svg" width="128" height="24" alt="Текст логотипа">
+              <img class="footer__logo-text" src="img/footer/footer-logo 2.svg" alt="Текст логотипа">
             </a>
           <div class="footer__social">
             <a class="social__link" href="#">
-              <img class="vk_icon" src="img/social/VK_icon.svg" width="22" height="12" alt="Иконка VK">
+              <img class="vk_icon" src="img/footer/social/VK_icon.svg" alt="Иконка VK">
             </a>
             <a class="social__link" href="#">
-              <img class="instagram_icon" src="img/social/Instagram_icon.svg" width="16" height="16" alt="Иконка Instagram">
+              <img class="instagram_icon" src="img/footer/social/Instagram_icon.svg" alt="Иконка Instagram">
             </a>
             <a class="social__link" href="#">
-              <img class="facebook_icon" src="img/social/Facebook_icon.svg" width="11" height="20" alt="Иконка Facebook">
+              <img class="facebook_icon" src="img/footer/social/Facebook_icon.svg" alt="Иконка Facebook">
             </a>
           </div>
-          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="footer__copyright-text">HTML Academy</span>
-            <img class="footer__copyright-icon" src="img/logo/html_academy.svg" width="27" height="34" alt="Иконка академии">
-          </a>
+          <div class="footer__copyright">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/footer/html_academy-text.svg" alt="HTML academy">
+            </a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/footer/html_academy-logo.svg" alt="Иконка академии">
+            </a>
+          </div>
         </div>
     </footer>
   </body>
