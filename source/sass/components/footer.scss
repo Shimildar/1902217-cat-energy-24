@@ -76,6 +76,9 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 18px;
     text-align: end;
@@ -83,6 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 78px;
     text-align: start;
   }
 }
