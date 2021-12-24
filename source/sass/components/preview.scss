@@ -58,7 +58,7 @@
     left: 22px;
     width: 50px;
     height: 53px;
-    background: url("../img/index/preview/cat_back.svg") top left no-repeat;
+    background: url("../img/preview/cat_back.svg") top left no-repeat;
     background-size: cover;
 
     @media (min-width: $tablet-width) {
@@ -89,7 +89,7 @@
     left: 13px;
     width: 67px;
     height: 50px;
-    background: url("../img/index/preview/cat_walk.svg") top left no-repeat;
+    background: url("../img/preview/cat_walk.svg") top left no-repeat;
     background-size: cover;
 
     @media (min-width: $tablet-width) {
@@ -132,7 +132,7 @@
 
 .preview__text {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #D9D9D9;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -175,7 +175,7 @@
     right: 0;
     width: 24px;
     height: 12px;
-    background: url("../img/index/preview/arrow.svg") top left no-repeat;
+    background: url("../img/preview/arrow.svg") top left no-repeat;
 
     @media (min-width: $tablet-width) {
       top: 10px;
