@@ -337,6 +337,22 @@
   }
 }
 
+.example__before-after span {
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted #000000;
+
+    &:hover {
+      border-bottom: 1px solid #000000;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+}
+
 .example__range-inner {
   display: flex;
   align-items: center;
@@ -350,7 +366,9 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    justify-content: center;
     margin: 0;
+    padding: 0;
     width: 426px;
     height: 6px;
     background-color: #DCDCDC;
@@ -359,6 +377,7 @@
 }
 
 .example__range-item {
+  cursor: pointer;
   box-sizing: border-box;
   width: 36px;
   height: 6px;
@@ -366,4 +385,18 @@
   padding: 0;
   background-color: $basic_green;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background: url("../img/example/slider_control.svg") top left no-repeat;
+
+    &:hover {
+      background: url("../img/example/slider_control_hover.svg") top left no-repeat;
+    }
+
+    &:active {
+      background: url("../img/example/slider_control_pressed.svg") top left no-repeat;
+    }
+  }
 }

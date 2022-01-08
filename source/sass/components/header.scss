@@ -30,8 +30,7 @@
     z-index: 2;
     width: 50%;
     height: 694px;
-    background: url("../img/header/intro_bg-desktop@1x.jpg") top right no-repeat;
-    background-size: cover;
+    background: url("../img/header/intro_bg-desktop@1x.jpg") no-repeat top right / cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header/intro_bg-desktop@2x.jpg");
@@ -73,7 +72,7 @@
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {
@@ -128,16 +127,9 @@
   }
 }
 
-.nav--closed .nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 24px;
-  right: 20px;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-}
+//--------------------------------------------------<Состояния меню>--------------
+
+// Открытое меню вне потока при включённом JavaScript
 
 .nav--opened .nav__toggle {
 
@@ -167,10 +159,6 @@
   }
 }
 
-.nav--closed .nav__list-item {
-  display: none;
-}
-
 .nav--opened .nav__wrapper {
   position: absolute;
   top: 66px;
@@ -179,6 +167,25 @@
   z-index: 10;
   background-color: #ffffff;
 }
+
+// Закрытое меню
+
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.nav--closed .nav__list-item {
+  display: none;
+}
+
+// Открытое меню в потоке при отключённом JavaScript
 
 .nav--nojs .nav__toggle {
   display: none;
@@ -193,6 +200,8 @@
   display: block;
 }
 
+//--------------------------------------------------</Состояния меню>--------------
+
 .nav__list {
   margin: 0;
   padding: 0;
@@ -202,6 +211,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
   }
 
@@ -226,7 +236,6 @@
   background-color: #ffffff;
   border-bottom: 1px solid #E6E6E6;
 
-
   @media (min-width: $tablet-width) {
     font-size: 18px;
     font-weight: 400;
@@ -234,6 +243,14 @@
     padding: 0;
     margin: 0;
     border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {

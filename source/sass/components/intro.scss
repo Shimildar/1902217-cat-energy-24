@@ -117,13 +117,13 @@
   line-height: 18px;
   font-weight: 400;
 
-  &:hover {
-    background-color: #5EAA2F;
-  }
+  // &:hover {
+  //   background-color: #5EAA2F;
+  // }
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+  // &:active {
+  //   color: rgba(255, 255, 255, 0.3);
+  // }
 
   @media (min-width: $tablet-width) {
     padding: 17px 0px 17px 0px;

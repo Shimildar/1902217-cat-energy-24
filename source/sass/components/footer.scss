@@ -127,6 +127,14 @@
   margin: 0px 0px 26px 0px;
   padding: 0;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
@@ -163,6 +171,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .vk_icon {
@@ -170,6 +182,11 @@
   margin: 0;
   margin-right: 37px;
   box-sizing: border-box;
+  fill: #666666;
+
+  &:hover {
+    fill: $basic_green;
+  }
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -183,6 +200,11 @@
   margin: 0;
   margin-right: 37px;
   box-sizing: border-box;
+  fill: #666666;
+
+  &:hover {
+    fill: $basic_green;
+  }
 
   @media (min-width: $tablet-width) {
     width: 23px;
@@ -195,6 +217,12 @@
 .facebook_icon {
   padding: 0;
   margin: 0;
+  fill: none;
+  stroke: #666666;
+
+  &:hover {
+    stroke: $basic_green;
+  }
 
   @media (min-width: $tablet-width) {
     width: 20px;
@@ -211,9 +239,21 @@
   width: 100%;
   text-decoration: none;
 
+  & a:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 163px;
+  }
+}
+
+.html-academy_icon {
+  fill: #666666;
+
+  &:hover {
+    fill: $basic_green;
   }
 }
 

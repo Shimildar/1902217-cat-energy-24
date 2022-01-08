@@ -156,9 +156,8 @@
 }
 
 .preview__link {
-  display: block;
-  position: relative;
-  width: 125px;
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 19px 0px 0px 0px;
   text-decoration: none;
@@ -168,24 +167,44 @@
   line-height: 1;
   text-transform: uppercase;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    right: 0;
-    width: 24px;
-    height: 12px;
-    background: url("../img/preview/arrow.svg") top left no-repeat;
+  & span {
+    margin-right: 15px;
+  }
 
-    @media (min-width: $tablet-width) {
-      top: 10px;
-    }
+  & svg {
+    width: 24px;
+    height: 10px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 158px;
     font-size: 20px;
     line-height: 30px;
+
+    & span {
+      margin-right: 25px;
+    }
+  }
+
+
+  @media (min-width: $desktop-width) {
+    & span {
+      margin-right: 28px;
+    }
+  }
+}
+
+.preview__link:hover {
+  @media (min-width: $tablet-width) {
+    & svg {
+      width: 32px;
+      height: 12px;
+    }
+  }
+}
+
+.preview__link:active {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
   }
 }
