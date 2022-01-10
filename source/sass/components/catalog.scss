@@ -321,4 +321,12 @@
   line-height: 20px;
   font-weight: 400;
   color: #444444;
+
+  &:hover {
+    background-color: #EBEBEB;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }

@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -21,7 +25,7 @@
               <img class="header__logo-image" src="img/logo/logo-mobile.svg" alt="Иконка кота">
             </picture>
           </a>
-        <nav class="nav nav--nojs">
+        <nav class="nav nav--nojs">   <!--Возможные состояния меню и классы для этого указаны в CSS-->
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="nav__wrapper">
             <ul class="nav__list">
@@ -68,12 +72,22 @@
           <li class="preview__item preview__item--cat-back">
             <h3 class="preview__title">Похудение</h3>
             <p class="preview__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="preview__link" href="#">Каталог SLIM</a>
+            <a class="preview__link" href="#">
+              <span>Каталог SLIM</span>
+              <svg class="preview__arrow" width="24" height="12" role="img">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
           </li>
           <li class="preview__item preview__item--cat-walk">
             <h3 class="preview__title">Набор массы</h3>
             <p class="preview__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="preview__link" href="#">Каталог PRO</a>
+            <a class="preview__link" href="#">
+              <span>Каталог PRO</span>
+              <svg class="preview__arrow" width="24" height="12" role="img">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -134,11 +148,11 @@
           </div>
           <div class="example__range">
             <div class="example__before-after">
-              <span class="example__text-before">Было</span>
+              <span>Было</span>
               <div class="example__range-inner">
                 <div class="example__range-item"></div>
               </div>
-              <span class="example__text-after">Стало</span>
+              <span>Стало</span>
             </div>
           </div>
         </div>
