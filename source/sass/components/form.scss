@@ -319,7 +319,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 44px;
+    top: 43px;
     right: 0;
     z-index: -1;
     width: 90%;
@@ -328,7 +328,7 @@
     background-size: cover;
 
     @media (min-width: $tablet-width) {
-      top: 99px;
+      top: 98px;
       width: 100%;
     }
 
@@ -339,7 +339,7 @@
 
   & legend {
     position: absolute;
-    top: 30px;
+    top: 28px;
     left: 20px;
     width: 63%;
     margin: 0;
@@ -441,7 +441,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
-    min-height: 54px;
+    min-height: 52px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -495,7 +495,7 @@
   position: relative;
   z-index: 1;
   margin: 0;
-  padding: 64px 0px 29px 0px;
+  padding: 64px 0px 28px 0px;
   width: 100%;
   box-sizing: border-box;
   border: none;
@@ -512,13 +512,13 @@
     background-size: cover;
 
     @media (min-width: $tablet-width) {
-      top: 20px;
+      top: 23px;
       z-index: -1;
       width: 100%;
     }
 
     @media (min-width: $desktop-width) {
-      top: 3px;
+      top: 5px;
     }
   }
 
@@ -546,7 +546,7 @@
   & legend {
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 18px;
     z-index: 1;
     width: 143px;
     font-size: 24px;
@@ -562,19 +562,19 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -20px;
+      top: -18px;
       left: 66px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 110px 0px 65px 0px;
+    padding: 112px 0px 65px 0px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: span 2;
     grid-row: 3 / 4;
-    padding: 92px 0px 67px 0px;
+    padding: 94px 0px 67px 0px;
   }
 }
 
@@ -600,7 +600,7 @@
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 55px 0px 21px 0px;
+  padding: 55px 0px 22px 0px;
   border: none;
   font-family: $base-font;
   font-weight: 400;
@@ -650,7 +650,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 92px 0px 25px 0px;
+    padding: 92px 0px 24px 0px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -659,7 +659,7 @@
   @media (min-width: $desktop-width) {
     grid-column: span 2;
     grid-row: 4 / 5;
-    padding: 92px 0px 29px 0px;
+    padding: 92px 0px 27px 0px;
   }
 }
 
@@ -712,7 +712,7 @@
     height: 40px;
     background-size: 40px 40px;
     padding-left: 60px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 }
 
@@ -760,7 +760,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 75%;
+    width: 74%;
     margin: 0px 0px 0px 70px;
   }
 
@@ -777,7 +777,7 @@
 .form__button {
   background-color: $basic_green;
   font-family: $base-font;
-  margin: 0px 0px 21px 0px;
+  margin: 0px 0px 20px 0px;
   padding: 11px 0px 11px 0px;
   font-size: 16px;
   line-height: 20px;
@@ -787,14 +787,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 14px 0px 14px 0px;
+    padding: 15px 0px 15px 0px;
     font-size: 20px;
   }
 }
 
 .form__sub-text {
   margin: 0 auto;
-  width: 170px;
+  width: 160px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -802,6 +802,7 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    padding-left: 14px;
     width: auto;
     align-self: center;
     font-size: 16px;
@@ -810,5 +811,6 @@
   @media (min-width: $desktop-width) {
     width: 180px;
     margin: 0;
+    padding: 0;
   }
 }
