@@ -122,7 +122,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    padding-top: 60px;
+    padding-top: 62px;
     padding-bottom: 50px;
   }
 }
@@ -279,6 +279,7 @@
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     margin-top: 85px;
+    padding-left: 5px;
     width: 592px;
     min-height: 572px;
     background: none;
@@ -323,6 +324,7 @@
     grid-row: 1 / -1;
     margin: 0;
     min-height: 568px;
+    padding: 0;
   }
 }
 

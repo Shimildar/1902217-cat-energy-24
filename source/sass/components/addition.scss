@@ -1,8 +1,31 @@
 .addition {
+  position: relative;
+  z-index: 1;
   box-sizing: border-box;
   margin: 0;
-  min-height: 965px;
-  padding: 25px 0px 35px 0px;
+  min-height: 960px;
+  padding: 24px 0px 34px 0px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: 0;
+    z-index: -1;
+    width: 90%;
+    height: 2px;
+    background-color: $basic-green;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      top: 21px;
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 24px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0px 0px 74px 0px;
@@ -27,6 +50,7 @@
     display: flex;
     justify-content: space-between;
     width: 85%;
+    padding-right: 5px;
   }
 }
 
@@ -46,8 +70,14 @@
   @media (min-width: $tablet-width) {
     width: 53%;
     margin-bottom: 80px;
+    margin-left: 33px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 75px;
+    width: 28%;
   }
 }
 
@@ -66,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 73%;
+    width: 73.5%;
     min-height: 288px;
     border-left: none;
     border-right: none;
@@ -97,13 +127,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0px 17px 0px;
+    padding: 15px 0px 16px 0px;
   }
 }
 
 .addition__item-name {
   margin: 0;
   padding: 0;
+  padding-left: 2px;
   font-family: $base-font;
   font-weight: 400;
   font-size: 16px;
@@ -154,7 +185,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 33%;
+    width: 32%;
+    padding-top: 5px;
   }
 }
 
@@ -172,7 +204,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 27%;
+    width: 27.5%;
   }
 }
 
