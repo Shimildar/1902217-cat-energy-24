@@ -65,7 +65,7 @@
   margin: 0px 0px 20px 0px;
   padding: 0;
   box-sizing: border-box;
-  height: 60px;
+  min-height: 60px;
   width: 99%;
 
   &:last-child {
@@ -77,7 +77,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     margin: 0px 0px 86px 0px;
-    height: 232px;
+    min-height: 232px;
     width: 245px;
   }
 

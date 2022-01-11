@@ -18,7 +18,7 @@
   <body class="page__body">
     <header class="header header--index">
       <div class="header__wrapper">
-          <a class="header__logo" href="index.html">
+          <a class="header__logo" href="index.html" title="Перейти на главную страницу">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
@@ -26,21 +26,21 @@
             </picture>
           </a>
         <nav class="nav nav--nojs">   <!--Возможные состояния меню и классы для этого указаны в CSS-->
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="nav__toggle" type="button" title="Открыть либо закрыть меню"><span class="visually-hidden">Открыть меню</span></button>
           <div class="nav__wrapper">
             <ul class="nav__list">
               <li class="nav__list-item nav__list-item--index nav__list-item--current-index">
-                <a href="index.html">
+                <a href="index.html" title="Перейти на главную страницу">
                   Главная
                 </a>
               </li>
               <li class="nav__list-item nav__list-item--index">
-                <a href="catalog.html">
+                <a href="catalog.html" title="Перейти на страницу каталога">
                   Каталог продукции
                 </a>
               </li>
               <li class="nav__list-item nav__list-item--index">
-                <a href="form.html">
+                <a href="form.html" title="Перейти на страницу подбора программы">
                   Подбор программы
                 </a>
               </li>
@@ -59,11 +59,11 @@
           </div>
           <div class="intro__picture">
             <picture>
-              <source type="image/webp"srcset="img/intro/index-can-mobile@1x.webp 1x, img/intro/index-can-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/intro/index-can-mobile@1x.webp 1x, img/intro/index-can-mobile@2x.webp 2x">
               <img class="intro__picture-img" src="img/intro/index-can-mobile@1x.png" width="280" height="270" srcset="img/intro/index-can-mobile@2x.png 2x" alt="Кэт энерджи-курица">
             </picture>
           </div>
-          <a class="button intro__button" href="form.html">Подобрать программу</a>
+          <a class="button intro__button" href="form.html" title="Перейти на страницу подбора программы">Подобрать программу</a>
         </div>
       </section>
       <section class="preview">
@@ -72,7 +72,7 @@
           <li class="preview__item preview__item--cat-back">
             <h3 class="preview__title">Похудение</h3>
             <p class="preview__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="preview__link" href="#">
+            <a class="preview__link" href="#" title="Перейти на страницу каталога Slim">
               <span>Каталог SLIM</span>
               <svg class="preview__arrow" width="24" height="12" role="img">
                 <use href="img/sprite.svg#arrow"></use>
@@ -82,7 +82,7 @@
           <li class="preview__item preview__item--cat-walk">
             <h3 class="preview__title">Набор массы</h3>
             <p class="preview__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="preview__link" href="#">
+            <a class="preview__link" href="#" title="Перейти на страницу каталога Pro">
               <span>Каталог PRO</span>
               <svg class="preview__arrow" width="24" height="12" role="img">
                 <use href="img/sprite.svg#arrow"></use>
@@ -148,11 +148,11 @@
           </div>
           <div class="example__range">
             <div class="example__before-after">
-              <span>Было</span>
+              <span title="Посмотреть как было">Было</span>
               <div class="example__range-inner">
-                <div class="example__range-item"></div>
+                <div class="example__range-item" title="Переключить на то как было, либо стало"></div>
               </div>
-              <span>Стало</span>
+              <span title="Посмотреть как стало">Стало</span>
             </div>
           </div>
         </div>
@@ -165,39 +165,37 @@
             <h3 class="footer__contacts-title">Приглашаем<br> к сотрудничеству дилеров!</h3>
             <p class="footer__contacts-text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
           </div>
-          <div class="footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637939411280!5m2!1sru!2sru" width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+          <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637939411280!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="footer__social-wrapper">
-          <a class="footer__logo" href="index.html" aria-label="Кэт Энерджи">
-            <img class="cat-energy_footer" src="./img/logo/cat-energy_footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
+          <a class="footer__logo" href="index.html" aria-label="Кэт Энерджи" title="Перейти на главную страницу">
+            <img class="footer__cat-energy" src="./img/logo/cat-energy_footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
           </a>
           <div class="footer__social">
-            <a class="social__link" href="#" aria-label="Мы в Вконтакте">
-              <svg class="vk_icon" width="23" height="13" role="img">
+            <a class="footer__social-link" href="#" aria-label="Мы в Вконтакте" title="Перейти на страницу Вконтакте">
+              <svg class="footer__vk-icon" width="23" height="13" role="img">
                 <use href="img/sprite.svg#vk_icon"></use>
               </svg>
             </a>
-            <a class="social__link" href="#" aria-label="Мы в Instagram">
-              <svg class="instagram_icon" width="16" height="16" role="img">
+            <a class="footer__social-link" href="#" aria-label="Мы в Instagram" title="Перейти на страницу Instagram">
+              <svg class="footer__instagram-icon" width="16" height="16" role="img">
                 <use href="img/sprite.svg#instagram_icon"></use>
               </svg>
             </a>
-            <a class="social__link" href="#" aria-label="Мы в Facebook">
-              <svg class="facebook_icon" width="13" height="20" role="img">
+            <a class="footer__social-link" href="#" aria-label="Мы в Facebook" title="Перейти на страницу Facebook">
+              <svg class="footer__facebook-icon" width="13" height="20" role="img">
                 <use href="img/sprite.svg#facebook_icon"></use>
               </svg>
             </a>
           </div>
           <div class="footer__copyright">
-            <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
-              <svg class="html-academy_text" width="113" height="16" role="img">
+            <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy" title="Перейти на страницу HTML Academy">
+              <svg class="footer__html-academy_text" width="113" height="16" role="img">
                 <use href="img/sprite.svg#html-academy_text"></use>
               </svg>
             </a>
-            <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
-              <svg class="html-academy_icon" width="27" height="34" role="img">
+            <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy" title="Перейти на страницу HTML Academy">
+              <svg class="footer__html-academy_icon" width="27" height="34" role="img">
                 <use href="img/sprite.svg#html-academy_icon"></use>
               </svg>
             </a>
