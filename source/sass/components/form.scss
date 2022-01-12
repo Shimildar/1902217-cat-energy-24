@@ -96,6 +96,7 @@
     line-height: 18px;
     color: #444444;
     text-transform: uppercase;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -402,6 +403,7 @@
 
 .form__label-email {
   padding-right: 11px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-right: 20px;
@@ -410,6 +412,7 @@
 
 .form__label-phone {
   padding-right: 8px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-right: 16px;
