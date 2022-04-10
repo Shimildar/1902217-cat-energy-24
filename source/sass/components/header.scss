@@ -63,8 +63,8 @@
   height: 65px;
   margin: 0;
   box-sizing: border-box;
-  padding: 10px 0px 17px 20px;
-  border-bottom: 1px solid #E6E6E6;
+  padding: 10px 0 17px 20px;
+  border-bottom: 1px solid #e6e6e6;
   text-decoration: none;
 
   &:hover {
@@ -132,7 +132,6 @@
 // Открытое меню вне потока при включённом JavaScript
 
 .nav--opened .nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -224,7 +223,7 @@
 .nav__list-item a {
   display: block;
   box-sizing: border-box;
-  padding: 22px 0px 24px 0px;
+  padding: 22px 0 24px 0;
   font-family: $base-font;
   font-weight: 500;
   color: #000000;
@@ -234,7 +233,7 @@
   text-decoration: none;
   text-align: center;
   background-color: #ffffff;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -282,6 +281,7 @@
     }
   }
 }
+
 .nav__list-item--current-index {
   position: relative;
 
